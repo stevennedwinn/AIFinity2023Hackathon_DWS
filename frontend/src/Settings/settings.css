@@ -1,0 +1,169 @@
+.Tabs {
+    width: 100%;
+    height: 100%;
+    /* min-height: 400px; */
+    background: #ffffff;
+    margin: 3.5rem auto 1.5rem;
+    padding: 2rem 1rem;
+    color: #000000;
+    border-radius: 2rem;
+    @media (max-width: 769px) {
+    }
+  }
+  
+  /* First and Second Tab Styles */
+  .FirstTab p,
+  .SecondTab p {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .FirstTab, .SecondTab {
+    width: 60%;
+    min-height: max-content;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /* Tab Navigation */
+  ul.nav {
+    width: 60%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(61, 0, 0);
+    border-radius: 2rem;
+    @media (max-width: 768px) {
+    width: 100%;
+    }
+  }
+  ul.nav li {
+    width: 50%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+    border-radius: 0;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+  }
+  ul.nav li:nth-child(2) {
+    border-radius: 0;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  ul.nav li:hover {
+    background: rgb(61, 0, 0);
+    color: white;
+  }
+  ul.nav li.activeTab {
+    background: rgb(61, 0, 0);
+    color: white;
+    /* width:500px; */
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .body {
+    background: #fcfcfc;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+
+  .dropdown {
+    width: 400px;
+    user-select: none;
+    margin: 40px auto;
+    position: relative;
+    padding-left: 10px;
+    
+  }
+  .dropdown .dropdown-btn {
+    padding: 15px 20px;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 2rem;
+  }
+  
+  .dropdown .dropdown-content {
+    position: absolute;
+    top: 110%;
+    left: 20;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    font-weight: 500;
+    color: #333;
+    width: 97%;
+    z-index: 99999;
+    border-radius: 2em;
+  }
+  .dropdown .dropdown-content .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .dropdown .dropdown-content .dropdown-item:hover {
+    background: #f4f4f4;
+    border-radius: 2rem;
+  }
+
+    /* in SecondTab.js */
+    .radioButton {
+      width: 0px;
+      display: flex;
+      padding: 5px;
+      margin: 5px;
+      align-items: center;
+    }
+  
+    .absolute-date{
+      /*padding: 15px 20px;*/
+      background: #fff;
+      font-weight: bold;
+      color: rgb(56, 72, 223);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 10px;
+    }
+  
+    .absolute-date label{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .absolute-date input{
+      padding: 17px 20px;
+      width: 200px;
+      background: #fff;
+      box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+      /*font-weight: bold;*/
+      color: #333;
+      display:flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      border-radius: 2rem;
+      border:1px solid rgb(88, 102, 211);
+    }
+    .absolute-date label{
+      font-weight:initial;
+    }
+    
+  

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.report-style-class{
+  height: 500px;
+  width: 100vh;
+}
+.main-container {
+  display: flex;
+}
+.main {
+  padding: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  display: grid;
+  position: relative;
+  left: 20px;;
+  place-items: center;
+  width: inherit;
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgb(61, 0, 0);
+  color: white;
+  min-height: 70rem;
+  /* overflow-y: auto; */
+  overflow: visible;
+  z-index: 500;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  font-size: 18px;
+  line-height: 0;
+}
+.bars {
+  width: 30px;
+}
+.hide {
+  display: none;
+}
+.dashboard-style-class{
+  height: 600px;
+  width: 800px;
+}
+
+.routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
+/*
+.battery_health {
+  text-align: center;
+  border-right: 400px;
+}
+
+.logpost {
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 10px;
+}*/
+.content {
+  /* display: flex; */
+  max-width: 1350px;
+  width: 1350px;
+  margin: 1.5% auto;
+  padding: 0 0;
+  /* background-color: lightcoral; */
+}
+
+
+
+.gauge {
+  /* background-color: black; */
+  max-width: 25rem;
+  width: 40%;
+  height: 15rem;
+  /* border-color: black; */
+  display: flex;
+  padding: 1mm 1mm 1mm 1mm;
+  /* position: absolute; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.gaugeGroup{
+  display: flex;
+  /* background-color: aqua; */
+  max-width: inherit;
+  width: 100%;
+}
+
+.no-data{
+  min-height: 200rem;
+  height: 100%;
+}
